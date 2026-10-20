@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudio Jurídico Diz & Asociados | Abogados de Familia y Sucesiones en CABA</title>
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            diz: {
+              navy: '#0A1424',
+              slate: '#12233C',
+              card: '#162A48',
+              gold: '#C5A059',
+              goldLight: '#E5C888',
+              goldDark: '#9A7736',
+              champagne: '#F8F5EE',
+              textMuted: '#9BA8BC',
+              border: 'rgba(197, 160, 89, 0.22)'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom refined animations & utilities */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #ECC880 0%, #C5A059 50%, #9F7A38 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-gradient-bg {
+      background: linear-gradient(135deg, #ECC880 0%, #C5A059 50%, #9F7A38 100%);
+    }
+    .gold-gradient-bg:hover {
+      background: linear-gradient(135deg, #F3D596 0%, #D4AF67 50%, #AD8742 100%);
+    }
+    .gold-glow {
+      box-shadow: 0 0 25px rgba(197, 160, 89, 0.25);
+    }
+    .card-border-glow {
+      border: 1px solid rgba(197, 160, 89, 0.22);
+      transition: all 0.3s ease;
+    }
+    .card-border-glow:hover {
+      border-color: rgba(229, 200, 136, 0.55);
+      box-shadow: 0 10px 30px -10px rgba(197, 160, 89, 0.2);
+    }
+    /* Subtle noise background */
+    .bg-pattern {
+      background-color: #0A1424;
+      background-image: radial-gradient(rgba(197, 160, 89, 0.08) 1px, transparent 0);
+      background-size: 32px 32px;
+    }
+  </style>
+</head>
+
+<body class="bg-diz-navy text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-diz-gold selection:text-diz-navy">
+
+  <!-- TOP BAR: Palacio Barolo / Direct contact -->
+  <div class="border-b border-diz-border/40 bg-diz-navy/90 text-xs py-2 px-4 backdrop-blur z-50 relative">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2 text-diz-textMuted">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center text-diz-gold font-medium">
+          <i class="fa-solid fa-landmark mr-1.5 text-xs"></i> Palacio Barolo, Av. de Mayo 1370 - CABA
+        </span>
+        <span class="hidden sm:inline text-slate-600">|</span>
+        <span class="hidden sm:inline"><i class="fa-solid fa-map-pin mr-1 text-slate-400"></i> Atención CABA, GBA e Interior</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://instagram.com/estudiojuridicodiz" target="_blank" class="hover:text-diz-gold transition-colors flex items-center gap-1">
+          <i class="fa-brands fa-instagram text-sm"></i> <span class="font-semibold">@estudiojuridicodiz</span>
+        </a>
+        <span class="text-slate-600">|</span>
+        <div class="flex items-center gap-1 text-emerald-400 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Guardia Urgente WhatsApp Activa
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-diz-navy/95 backdrop-blur-md border-b border-diz-border/30 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Branding -->
+      <a href="#" class="flex items-center gap-3 group">
+        <!-- SVG Monogram Logo: Scales + Letter D -->
+        <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-diz-slate to-diz-navy border border-diz-gold/40 flex items-center justify-center p-2 shadow-inner group-hover:border-diz-gold transition-all">
+          <svg viewBox="0 0 100 100" class="w-full h-full text-diz-gold" fill="currentColor">
+            <!-- Stylized scale of justice and D shape -->
+            <path d="M50 8 L50 24 M35 24 L65 24 M50 24 L50 78 M30 82 L70 82" stroke="#C5A059" stroke-width="6" stroke-linecap="round"/>
+            <path d="M22 36 L38 36 L30 52 Z" fill="#C5A059" opacity="0.9"/>
+            <path d="M62 36 L78 36 L70 52 Z" fill="#C5A059" opacity="0.9"/>
+            <circle cx="50" cy="12" r="5" fill="#E5C888"/>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <div class="text-lg sm:text-xl font-serif font-bold tracking-wider text-slate-100 flex items-center gap-1.5">
+            ESTUDIO DIZ <span class="text-xs tracking-widest uppercase font-sans font-semibold text-diz-gold bg-diz-gold/10 px-2 py-0.5 rounded border border-diz-gold/20">& ASOC.</span>
+          </div>
+          <span class="text-[10px] uppercase tracking-widest text-diz-textMuted font-medium">Despacho Jurídico • Buenos Aires</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium">
+        <a href="#calculador" class="text-slate-200 hover:text-diz-gold transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-calculator text-diz-gold text-xs"></i> Calculador de Alimentos
+        </a>
+        <a href="#precalificador" class="text-slate-200 hover:text-diz-gold transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-clipboard-check text-diz-gold text-xs"></i> Precalificar Caso
+        </a>
+        <a href="#areas" class="text-slate-200 hover:text-diz-gold transition-colors">Especialidades</a>
+        <a href="#preguntas" class="text-slate-200 hover:text-diz-gold transition-colors">Preguntas Frecuentes</a>
+        <a href="#sedes" class="text-slate-200 hover:text-diz-gold transition-colors">Sedes</a>
+      </nav>
+
+      <!-- Header CTA -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#precalificador" class="gold-gradient-bg text-diz-navy font-bold px-4 py-2.5 rounded-lg text-xs md:text-sm shadow-md hover:brightness-110 transition flex items-center gap-2">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Consulta Prioritaria</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" aria-label="Abrir Menú" class="lg:hidden text-slate-300 hover:text-diz-gold p-2">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-diz-border/30 bg-diz-slate px-4 py-6 space-y-4">
+      <a href="#calculador" onclick="toggleMenu()" class="block text-slate-200 hover:text-diz-gold text-base py-1">
+        <i class="fa-solid fa-calculator text-diz-gold mr-2"></i> Calculador de Alimentos
+      </a>
+      <a href="#precalificador" onclick="toggleMenu()" class="block text-slate-200 hover:text-diz-gold text-base py-1">
+        <i class="fa-solid fa-clipboard-check text-diz-gold mr-2"></i> Precalificar Caso en 3 Pasos
+      </a>
+      <a href="#areas" onclick="toggleMenu()" class="block text-slate-200 hover:text-diz-gold text-base py-1">Áreas de Práctica</a>
+      <a href="#preguntas" onclick="toggleMenu()" class="block text-slate-200 hover:text-diz-gold text-base py-1">Preguntas Frecuentes</a>
+      <a href="#sedes" onclick="toggleMenu()" class="block text-slate-200 hover:text-diz-gold text-base py-1">Sedes y Contacto</a>
+      <div class="pt-2">
+        <a href="#precalificador" onclick="toggleMenu()" class="w-full block text-center gold-gradient-bg text-diz-navy font-bold px-4 py-3 rounded-lg text-sm">
+          Iniciar Consulta Inmediata
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 bg-pattern overflow-hidden">
+    <!-- Ambient gold glows -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-diz-gold/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Trust badges top -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-diz-slate/90 border border-diz-gold/30 text-xs font-medium text-slate-300">
+          <div class="flex text-amber-400 text-xs">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="font-bold text-slate-100">4.9 / 5.0</span> en Reseñas de Clientes Verificados
+        </div>
+        <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-diz-gold/10 border border-diz-gold/30 text-xs text-diz-goldLight font-medium">
+          <i class="fa-solid fa-certificate"></i> Matrículas CPACF & ColProBA
+        </div>
+      </div>
+
+      <div class="text-center max-w-4xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-slate-50 leading-[1.15]">
+          Defendemos los Derechos de tu Familia y tu Futuro con <span class="gold-gradient-text">Estrategia y Firmeza</span>.
+        </h1>
+        <p class="mt-6 text-base sm:text-lg lg:text-xl text-diz-textMuted max-w-3xl mx-auto leading-relaxed">
+          Especialistas en <strong>Derecho de Familia, Alimentos, Divorcios Exprés y Sucesiones</strong> en la Ciudad Autónoma de Buenos Aires y Provincia. Protegé el bienestar económico de tus hijos sin dilaciones burocráticas.
+        </p>
+
+        <!-- Main Call To Actions -->
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#calculador" class="w-full sm:w-auto gold-gradient-bg text-diz-navy font-bold px-8 py-4 rounded-xl text-base shadow-lg hover:brightness-105 transition flex items-center justify-center gap-3">
+            <i class="fa-solid fa-calculator text-lg"></i>
+            <span>Calcular Cuota Alimentaria Hoy</span>
+          </a>
+          <a href="#precalificador" class="w-full sm:w-auto bg-diz-slate/80 hover:bg-diz-slate text-slate-100 border border-diz-gold/40 font-semibold px-8 py-4 rounded-xl text-base transition flex items-center justify-center gap-3">
+            <i class="fa-solid fa-bolt text-diz-gold"></i>
+            <span>Precalificar Caso Online</span>
+          </a>
+        </div>
+
+        <!-- Metric highlights -->
+        <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto border-t border-diz-border/30 pt-8 text-center">
+          <div class="p-3">
+            <div class="text-2xl sm:text-3xl font-serif font-bold text-diz-gold">+12 Años</div>
+            <div class="text-xs text-diz-textMuted mt-1">De trayectoria y litigio activo</div>
+          </div>
+          <div class="p-3">
+            <div class="text-2xl sm:text-3xl font-serif font-bold text-diz-gold">+850</div>
+            <div class="text-xs text-diz-textMuted mt-1">Familias y casos patrocinados</div>
+          </div>
+          <div class="p-3">
+            <div class="text-2xl sm:text-3xl font-serif font-bold text-diz-gold">48 Hs</div>
+            <div class="text-xs text-diz-textMuted mt-1">Plazo máx. inicio de mediaciones</div>
+          </div>
+          <div class="p-3">
+            <div class="text-2xl sm:text-3xl font-serif font-bold text-diz-gold">100%</div>
+            <div class="text-xs text-diz-textMuted mt-1">Atención personalizada y digital</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULATOR SECTION (HIGH CONVERSION HERO FEATURE) -->
+  <section id="calculador" class="py-16 sm:py-24 bg-diz-slate/50 border-y border-diz-border/30 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest font-bold text-diz-gold bg-diz-gold/10 px-3 py-1 rounded-full border border-diz-gold/20">
+          Herramienta Interactiva 2026
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-100 mt-4">
+          Calculador Estimativo de Cuota Alimentaria
+        </h2>
+        <p class="text-sm sm:text-base text-diz-textMuted mt-3">
+          Basado en pautas jurisprudenciales de fueros de Familia (CABA / PBA) y las referencias de la <strong>Canasta Crianza INDEC</strong>. Estimá en segundos el importe que corresponde reclamar para tus hijos.
+        </p>
+      </div>
+
+      <!-- Calculator Card Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start max-w-5xl mx-auto">
+        
+        <!-- Controls Column (Left) -->
+        <div class="lg:col-span-7 bg-diz-card p-6 sm:p-8 rounded-2xl border border-diz-gold/30 shadow-2xl">
+          <form id="cuotaForm" onsubmit="return false;" class="space-y-6">
+            
+            <!-- 1. Cantidad de Hijos -->
+            <div>
+              <label class="block text-sm font-semibold text-slate-200 mb-2">
+                1. Cantidad de Hijos / Hojas menores a cargo:
+              </label>
+              <div class="grid grid-cols-4 gap-3">
+                <button type="button" onclick="setHijos(1)" class="hijo-btn active-calc-btn py-2.5 rounded-lg border text-sm font-bold transition flex items-center justify-center gap-1 border-diz-gold bg-diz-gold text-diz-navy" data-val="1">
+                  1 Hijo
+                </button>
+                <button type="button" onclick="setHijos(2)" class="hijo-btn py-2.5 rounded-lg border text-sm font-bold transition flex items-center justify-center gap-1 border-slate-700 bg-diz-navy text-slate-300 hover:border-diz-gold/60" data-val="2">
+                  2 Hijos
+                </button>
+                <button type="button" onclick="setHijos(3)" class="hijo-btn py-2.5 rounded-lg border text-sm font-bold transition flex items-center justify-center gap-1 border-slate-700 bg-diz-navy text-slate-300 hover:border-diz-gold/60" data-val="3">
+                  3 Hijos
+                </button>
+                <button type="button" onclick="setHijos(4)" class="hijo-btn py-2.5 rounded-lg border text-sm font-bold transition flex items-center justify-center gap-1 border-slate-700 bg-diz-navy text-slate-300 hover:border-diz-gold/60" data-val="4">
+                  4+ Hijos
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. Rango de Edades (Canasta Crianza INDEC) -->
+            <div>
+              <label class="block text-sm font-semibold text-slate-200 mb-2">
+                2. Rango de edades predominante (Parámetro Canasta Crianza INDEC):
+              </label>
+              <select id="rangoEdad" onchange="calcularCuota()" class="w-full bg-diz-navy border border-slate-700 rounded-lg px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-diz-gold">
+                <option value="1">Menores de 1 a 3 años (Mayor costo de cuidado personal)</option>
+                <option value="2">De 4 a 5 años (Nivel inicial + estimulación)</option>
+                <option value="3" selected>De 6 a 12 años (Etapa primaria y actividades extra)</option>
+                <option value="4">De 13 a 21 años (Etapa secundaria y formación integral)</option>
+              </select>
+            </div>
+
+            <!-- 3. Ingresos del Progenitor Obligado -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="block text-sm font-semibold text-slate-200">
+                  3. Ingreso Neto Estimado del Alimentante ($ ARS):
+                </label>
+                <span class="text-xs text-diz-gold font-medium cursor-pointer" onclick="toggleIngresoDesconocido()">
+                  ¿No conocés el sueldo o es en negro?
+                </span>
+              </div>
+              <div class="relative">
+                <span class="absolute left-4 top-3 text-diz-textMuted font-bold">$</span>
+                <input type="number" id="ingresoNeto" value="1200000" step="50000" min="200000" oninput="calcularCuota()" class="w-full bg-diz-navy border border-slate-700 rounded-lg pl-9 pr-4 py-3 text-slate-100 font-semibold text-base focus:outline-none focus:border-diz-gold transition">
+              </div>
+              <p id="ingresoHelp" class="text-xs text-diz-textMuted mt-1.5">
+                Ingreso neto mensual promedio en mano (o estimación de estilo de vida).
+              </p>
+            </div>
+
+            <!-- 4. Factores Adicionales -->
+            <div>
+              <label class="block text-sm font-semibold text-slate-200 mb-2.5">
+                4. Gastos especiales o situación habitacional:
+              </label>
+              <div class="space-y-2.5">
+                <label class="flex items-center gap-3 p-3 bg-diz-navy/70 border border-slate-800 rounded-lg cursor-pointer hover:border-slate-700 transition">
+                  <input type="checkbox" id="checkAlquiler" onchange="calcularCuota()" class="w-4 h-4 accent-amber-500 rounded">
+                  <span class="text-xs sm:text-sm text-slate-300">Quien convive con los hijos paga <strong>alquiler de vivienda</strong></span>
+                </label>
+                <label class="flex items-center gap-3 p-3 bg-diz-navy/70 border border-slate-800 rounded-lg cursor-pointer hover:border-slate-700 transition">
+                  <input type="checkbox" id="checkColegio" onchange="calcularCuota()" class="w-4 h-4 accent-amber-500 rounded">
+                  <span class="text-xs sm:text-sm text-slate-300">Asisten a <strong>colegio privado / obra social privada</strong></span>
+                </label>
+                <label class="flex items-center gap-3 p-3 bg-diz-navy/70 border border-slate-800 rounded-lg cursor-pointer hover:border-slate-700 transition">
+                  <input type="checkbox" id="checkSalud" onchange="calcularCuota()" class="w-4 h-4 accent-amber-500 rounded">
+                  <span class="text-xs sm:text-sm text-slate-300">Tratamiento médico, psicológico o necesidad especial</span>
+                </label>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Result Box (Right Column) -->
+        <div class="lg:col-span-5 bg-gradient-to-b from-diz-slate to-diz-navy p-6 sm:p-8 rounded-2xl border-2 border-diz-gold/60 shadow-2xl relative">
+          <div class="absolute -top-3 right-6 bg-diz-gold text-diz-navy text-[11px] font-extrabold uppercase px-3 py-0.5 rounded-full tracking-wider shadow">
+            Estimación de Reclamo
+          </div>
+
+          <h3 class="text-xl font-serif font-bold text-slate-100 flex items-center gap-2">
+            <i class="fa-solid fa-scale-balanced text-diz-gold"></i> Resultado Proyectado
+          </h3>
+          <p class="text-xs text-diz-textMuted mt-1">Cálculo jurisprudencial sugerido para demanda o mediación</p>
+
+          <div class="my-6 p-5 rounded-xl bg-diz-navy/90 border border-diz-gold/30 text-center">
+            <div class="text-xs uppercase tracking-wider text-diz-textMuted font-semibold">Rango Estimado en Porcentaje</div>
+            <div id="resPorcentaje" class="text-3xl sm:text-4xl font-serif font-bold text-diz-gold mt-1">25% - 30%</div>
+            <div class="text-xs text-slate-400 mt-1">del total de ingresos del alimentante</div>
+
+            <div class="border-t border-slate-800 my-4"></div>
+
+            <div class="text-xs uppercase tracking-wider text-diz-textMuted font-semibold">Importe Mensual Aproximado</div>
+            <div id="resMonto" class="text-3xl sm:text-4xl font-sans font-extrabold text-slate-100 mt-1 tracking-tight">
+              $ 300.000 - $ 360.000
+            </div>
+            <div class="text-[11px] text-amber-300/80 mt-1">
+              *Sujeto a indexación semestral por IPC / Ripte
+            </div>
+          </div>
+
+          <div class="space-y-3 text-xs text-slate-300 bg-slate-900/40 p-3.5 rounded-lg border border-slate-800">
+            <div class="flex items-start gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+              <span>Incluye rubros de alimentación, vivienda, salud, educación y recreación.</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+              <span>El cuidado personal de quien convive con los hijos tiene <strong>valor económico computable</strong> (Art. 660 CCCN).</span>
+            </div>
+          </div>
+
+          <!-- Direct Conversion CTA with prefilled params -->
+          <button onclick="enviarCalculoWhatsApp()" class="mt-6 w-full gold-gradient-bg text-diz-navy font-bold py-3.5 px-4 rounded-xl text-sm shadow-xl hover:brightness-110 transition flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Pedir Liquidación Formal por WhatsApp</span>
+          </button>
+          
+          <p class="text-[10px] text-center text-slate-400 mt-3">
+            Atención confidencial inmediata por abogados matriculados.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3-STEP QUALIFIER FORM (LEAD GEN ENGINE) -->
+  <section id="precalificador" class="py-16 sm:py-24 bg-diz-navy relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-10">
+        <span class="text-xs uppercase tracking-widest font-bold text-diz-gold bg-diz-gold/10 px-3 py-1 rounded-full border border-diz-gold/20">
+          Evaluación Jurídica Express
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-100 mt-4">
+          Precalificá Tu Caso en 3 Pasos
+        </h2>
+        <p class="text-sm sm:text-base text-diz-textMuted mt-2">
+          Evitá pérdidas de tiempo. Nuestros abogados analizan la viabilidad y urgencia de tu reclamo antes de agendar.
+        </p>
+      </div>
+
+      <!-- Qualifier Box with Step Navigation -->
+      <div class="bg-diz-card border border-diz-gold/30 rounded-2xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+        
+        <!-- Step progress indicators -->
+        <div class="flex items-center justify-between mb-8 max-w-md mx-auto">
+          
+          <div class="flex flex-col items-center">
+            <div id="stepBubble1" class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-diz-gold text-diz-navy transition-all duration-300">
+              1
+            </div>
+            <span class="text-[11px] text-slate-300 mt-1.5 font-medium">Materia</span>
+          </div>
+          
+          <div id="stepLine1" class="flex-1 h-0.5 bg-slate-700 mx-2 transition-all duration-300"></div>
+
+          <div class="flex flex-col items-center">
+            <div id="stepBubble2" class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-diz-navy border border-slate-700 text-slate-400 transition-all duration-300">
+              2
+            </div>
+            <span class="text-[11px] text-slate-400 mt-1.5 font-medium">Estado</span>
+          </div>
+
+          <div id="stepLine2" class="flex-1 h-0.5 bg-slate-700 mx-2 transition-all duration-300"></div>
+
+          <div class="flex flex-col items-center">
+            <div id="stepBubble3" class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-diz-navy border border-slate-700 text-slate-400 transition-all duration-300">
+              3
+            </div>
+            <span class="text-[11px] text-slate-400 mt-1.5 font-medium">Contacto</span>
+          </div>
+
+        </div>
+
+        <!-- Form Steps Container -->
+        <form id="qualifierForm" onsubmit="return false;">
+          
+          <!-- STEP 1: Area of Practice -->
+          <div id="step1" class="space-y-4">
+            <h3 class="text-lg font-serif font-bold text-slate-100 text-center mb-4">
+              ¿Cuál es la temática principal de tu consulta?
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              
+              <label class="qualifier-option p-4 rounded-xl border border-slate-700 bg-diz-navy/60 hover:border-diz-gold/70 cursor-pointer flex items-center gap-3 transition">
+                <input type="radio" name="areaLegal" value="Cuota Alimentaria / Régimen de Alimentos" checked class="accent-amber-500 w-4 h-4">
+                <div>
+                  <div class="font-bold text-sm text-slate-100">Fijación o Aumento de Alimentos</div>
+                  <div class="text-xs text-diz-textMuted">Primera vez, aumento o embargo judicial</div>
+                </div>
+              </label>
+
+              <label class="qualifier-option p-4 rounded-xl border border-slate-700 bg-diz-navy/60 hover:border-diz-gold/70 cursor-pointer flex items-center gap-3 transition">
+                <input type="radio" name="areaLegal" value="Divorcio Exprés y División de Bienes" class="accent-amber-500 w-4 h-4">
+                <div>
+                  <div class="font-bold text-sm text-slate-100">Divorcio Exprés / Bienes</div>
+                  <div class="text-xs text-diz-textMuted">Unilateral o bilateral, división patrimonial</div>
+                </div>
+              </label>
+
+              <label class="qualifier-option p-4 rounded-xl border border-slate-700 bg-diz-navy/60 hover:border-diz-gold/70 cursor-pointer flex items-center gap-3 transition">
+                <input type="radio" name="areaLegal" value="Régimen de Comunicación y Cuidado Personal" class="accent-amber-500 w-4 h-4">
+                <div>
+                  <div class="font-bold text-sm text-slate-100">Cuidado Personal y Visitas</div>
+                  <div class="text-xs text-diz-textMuted">Régimen comunicacional y acuerdos familiares</div>
+                </div>
+              </label>
+
+              <label class="qualifier-option p-4 rounded-xl border border-slate-700 bg-diz-navy/60 hover:border-diz-gold/70 cursor-pointer flex items-center gap-3 transition">
+                <input type="radio" name="areaLegal" value="Juicio Sucesorio / Herencias" class="accent-amber-500 w-4 h-4">
+                <div>
+                  <div class="font-bold text-sm text-slate-100">Sucesiones y Herencias</div>
+                  <div class="text-xs text-diz-textMuted">Declaratoria de herederos, venta de inmuebles</div>
+                </div>
+              </label>
+
+              <label class="qualifier-option p-4 rounded-xl border border-slate-700 bg-diz-navy/60 hover:border-diz-gold/70 cursor-pointer flex items-center gap-3 sm:col-span-2 transition">
+                <input type="radio" name="areaLegal" value="Derecho Laboral e Indemnizaciones" class="accent-amber-500 w-4 h-4">
+                <div>
+                  <div class="font-bold text-sm text-slate-100">Laboral: Despidos, Trabajo No Registrado o ART</div>
+                  <div class="text-xs text-diz-textMuted">Reclamos indemnizatorios ante SECLO o Ministerio</div>
+                </div>
+              </label>
+
+            </div>
+
+            <div class="pt-4 flex justify-end">
+              <button type="button" onclick="goToStep(2)" class="gold-gradient-bg text-diz-navy font-bold px-6 py-3 rounded-lg text-sm flex items-center gap-2">
+                <span>Continuar</span> <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Current Status & Urgency -->
+          <div id="step2" class="space-y-4 hidden">
+            <h3 class="text-lg font-serif font-bold text-slate-100 text-center mb-4">
+              ¿En qué situación procesal se encuentra el caso?
+            </h3>
+            
+            <div class="space-y-3">
+              <label class="p-4 rounded-xl border border-slate-700 bg-diz-navy/60 hover:border-diz-gold/70 cursor-pointer flex items-center gap-3 transition">
+                <input type="radio" name="estadoCaso" value="Caso nuevo (Sin iniciar nada formal aún)" checked class="accent-amber-500 w-4 h-4">
+                <div>
+                  <div class="font-bold text-sm text-slate-100">Aún no inicié nada formal</div>
+                  <div class="text-xs text-diz-textMuted">Quiero asesorarme para mandar carta documento o citar a mediación.</div>
+                </div>
+              </label>
+
+              <label class="p-4 rounded-xl border border-slate-700 bg-diz-navy/60 hover:border-diz-gold/70 cursor-pointer flex items-center gap-3 transition">
+                <input type="radio" name="estadoCaso" value="En instancia de Mediación Prejudicial" class="accent-amber-500 w-4 h-4">
+                <div>
+                  <div class="font-bold text-sm text-slate-100">Estamos en mediación o recibí una cédula/citación</div>
+                  <div class="text-xs text-diz-textMuted">Necesito abogado/a matriculado/a para presentarme.</div>
+                </div>
+              </label>
+
+              <label class="p-4 rounded-xl border border-slate-700 bg-diz-navy/60 hover:border-diz-gold/70 cursor-pointer flex items-center gap-3 transition">
+                <input type="radio" name="estadoCaso" value="Acuerdo previo incumplido (Deuda acumulada)" class="accent-amber-500 w-4 h-4">
+                <div>
+                  <div class="font-bold text-sm text-slate-100">Hay un acuerdo firmado pero no se cumple</div>
+                  <div class="text-xs text-diz-textMuted">Existe mora en el pago o no respeta el régimen de contacto acordado.</div>
+                </div>
+              </label>
+
+              <label class="p-4 rounded-xl border border-slate-700 bg-diz-navy/60 hover:border-diz-gold/70 cursor-pointer flex items-center gap-3 transition">
+                <input type="radio" name="estadoCaso" value="Urgencia procesal / Cautelar inmediata" class="accent-amber-500 w-4 h-4">
+                <div>
+                  <div class="font-bold text-sm text-amber-300 flex items-center gap-1.5">
+                    <i class="fa-solid fa-triangle-exclamation"></i> Urgencia extrema / Alimentos provisorios inmediatos
+                  </div>
+                  <div class="text-xs text-diz-textMuted">Hijos sin sustento inmediato o retención indebida.</div>
+                </div>
+              </label>
+            </div>
+
+            <div class="pt-4 flex justify-between">
+              <button type="button" onclick="goToStep(1)" class="bg-diz-navy border border-slate-700 text-slate-300 font-medium px-5 py-3 rounded-lg text-sm flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i> <span>Atrás</span>
+              </button>
+              <button type="button" onclick="goToStep(3)" class="gold-gradient-bg text-diz-navy font-bold px-6 py-3 rounded-lg text-sm flex items-center gap-2">
+                <span>Último Paso</span> <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Contact & Direct WhatsApp Generation -->
+          <div id="step3" class="space-y-4 hidden">
+            <h3 class="text-lg font-serif font-bold text-slate-100 text-center mb-1">
+              Datos para Asignación de Turno Prioritario
+            </h3>
+            <p class="text-xs text-diz-textMuted text-center mb-4">
+              Te contactará el profesional especialista en tu materia.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Nombre y Apellido *</label>
+                <input type="text" id="leadNombre" placeholder="Ej: Marcela González" class="w-full bg-diz-navy border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-slate-100 focus:outline-none focus:border-diz-gold" required>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Teléfono / WhatsApp *</label>
+                <input type="tel" id="leadTelefono" placeholder="Ej: 11 3456-7890" class="w-full bg-diz-navy border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-slate-100 focus:outline-none focus:border-diz-gold" required>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Jurisdicción / Localidad *</label>
+                <select id="leadZona" class="w-full bg-diz-navy border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-slate-100 focus:outline-none focus:border-diz-gold">
+                  <option value="CABA (Capital Federal)">CABA (Capital Federal - Tribunales Lavalle/Uruguay)</option>
+                  <option value="GBA Zona Oeste (Morón / San Justo / Moreno)">GBA Zona Oeste (Morón, La Matanza, Moreno, Merlo)</option>
+                  <option value="GBA Zona Norte (San Isidro / San Martín)">GBA Zona Norte (San Isidro, Vicente López, San Martín)</option>
+                  <option value="GBA Zona Sur (Lomas / Quilmes / Lanús)">GBA Zona Sur (Lomas de Zamora, Quilmes, Lanús)</option>
+                  <option value="Interior de la Prov. de Bs As / Dolores">Interior de la Prov. de Bs As / Dolores</option>
+                  <option value="Resto de Argentina / Consulta Online">Resto del País / Asesoramiento Online</option>
+                </select>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Breve detalle opcional (opcional)</label>
+                <textarea id="leadDetalle" rows="2" placeholder="Contanos brevemente qué sucedió..." class="w-full bg-diz-navy border border-slate-700 rounded-lg px-4 py-2 text-sm text-slate-100 focus:outline-none focus:border-diz-gold"></textarea>
+              </div>
+            </div>
+
+            <div class="pt-4 flex justify-between items-center">
+              <button type="button" onclick="goToStep(2)" class="bg-diz-navy border border-slate-700 text-slate-300 font-medium px-5 py-3 rounded-lg text-sm flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i> <span>Atrás</span>
+              </button>
+              
+              <button type="button" onclick="finalizarPrecalificacion()" class="gold-gradient-bg text-diz-navy font-bold px-7 py-3 rounded-lg text-sm shadow-xl flex items-center gap-2 hover:brightness-110 transition">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Enviar Caso & Recibir Asesoramiento</span>
+              </button>
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRACTICE AREAS -->
+  <section id="areas" class="py-20 bg-diz-slate/40 border-t border-diz-border/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest font-bold text-diz-gold bg-diz-gold/10 px-3 py-1 rounded-full border border-diz-gold/20">
+          Servicios Jurídicos Integrales
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-100 mt-4">
+          Áreas de Práctica Especializada
+        </h2>
+        <p class="text-sm sm:text-base text-diz-textMuted mt-2">
+          Acompañamiento legal humano, transparente y de máxima celeridad en fueros Civiles, de Familia y del Trabajo.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Cuota Alimentaria -->
+        <div class="bg-diz-card p-8 rounded-2xl card-border-glow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-diz-navy border border-diz-gold/30 flex items-center justify-center text-diz-gold text-xl mb-6">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-slate-100 mb-2.5">
+              Alimentos & Cuota Provisoria
+            </h3>
+            <p class="text-xs sm:text-sm text-diz-textMuted leading-relaxed mb-4">
+              Reclamos urgentes de cuota provisoria, fijación definitiva, aumento por inflación o mayores necesidades, y embargos de sueldos o cuentas ante mora reiterada.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Medidas cautelares y traba de embargos</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Demanda a abuelos en subsidio</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Alimentante sin recibo o monotributista</li>
+            </ul>
+          </div>
+          <a href="#precalificador" class="text-xs font-bold text-diz-gold flex items-center gap-1.5 hover:underline">
+            Consultar este tema <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Card 2: Divorcios Exprés -->
+        <div class="bg-diz-card p-8 rounded-2xl card-border-glow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-diz-navy border border-diz-gold/30 flex items-center justify-center text-diz-gold text-xl mb-6">
+              <i class="fa-solid fa-file-contract"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-slate-100 mb-2.5">
+              Divorcios Exprés & Bienes
+            </h3>
+            <p class="text-xs sm:text-sm text-diz-textMuted leading-relaxed mb-4">
+              Tramitación ágil del divorcio conforme al Código Civil y Comercial. Sin necesidad de mutuo acuerdo ni causas alegadas.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Divorcio unilateral o bilateral</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Propuesta reguladora y compensación económica</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> División de bienes gananciales y vehículos</li>
+            </ul>
+          </div>
+          <a href="#precalificador" class="text-xs font-bold text-diz-gold flex items-center gap-1.5 hover:underline">
+            Consultar este tema <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Card 3: Cuidado Personal y Régimen -->
+        <div class="bg-diz-card p-8 rounded-2xl card-border-glow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-diz-navy border border-diz-gold/30 flex items-center justify-center text-diz-gold text-xl mb-6">
+              <i class="fa-solid fa-people-roof"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-slate-100 mb-2.5">
+              Cuidado Personal & Comunicación
+            </h3>
+            <p class="text-xs sm:text-sm text-diz-textMuted leading-relaxed mb-4">
+              Garantizamos el derecho de contacto y el interés superior de los niños ante impedimentos u obstrucciones injustificadas.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Cuidado compartido o unilateral</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Calendario de vacaciones y festividades</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Autorizaciones de viaje al exterior</li>
+            </ul>
+          </div>
+          <a href="#precalificador" class="text-xs font-bold text-diz-gold flex items-center gap-1.5 hover:underline">
+            Consultar este tema <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Card 4: Sucesiones -->
+        <div class="bg-diz-card p-8 rounded-2xl card-border-glow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-diz-navy border border-diz-gold/30 flex items-center justify-center text-diz-gold text-xl mb-6">
+              <i class="fa-solid fa-house-chimney-window"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-slate-100 mb-2.5">
+              Sucesiones & Herencias
+            </h3>
+            <p class="text-xs sm:text-sm text-diz-textMuted leading-relaxed mb-4">
+              Tramitación expedita de sucesiones en CABA y PBA para que puedas escriturar, disponer o vender bienes heredados sin demoras.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Declaratoria de herederos rápida</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Venta por tracto abreviado</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Honorarios regulados y en cuotas</li>
+            </ul>
+          </div>
+          <a href="#precalificador" class="text-xs font-bold text-diz-gold flex items-center gap-1.5 hover:underline">
+            Consultar este tema <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Card 5: Filiación e Impugnación -->
+        <div class="bg-diz-card p-8 rounded-2xl card-border-glow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-diz-navy border border-diz-gold/30 flex items-center justify-center text-diz-gold text-xl mb-6">
+              <i class="fa-solid fa-dna"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-slate-100 mb-2.5">
+              Filiación & Reclamo de Paternidad
+            </h3>
+            <p class="text-xs sm:text-sm text-diz-textMuted leading-relaxed mb-4">
+              Juicios de filiación con prueba de ADN, inscripción registral de apellido y reclamo retroactivo de alimentos y daño moral.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Reconocimiento legal de hijo/a</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Impugnación de paternidad</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Indemnización por falta de reconocimiento</li>
+            </ul>
+          </div>
+          <a href="#precalificador" class="text-xs font-bold text-diz-gold flex items-center gap-1.5 hover:underline">
+            Consultar este tema <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Card 6: Laboral e Indemnizaciones -->
+        <div class="bg-diz-card p-8 rounded-2xl card-border-glow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-diz-navy border border-diz-gold/30 flex items-center justify-center text-diz-gold text-xl mb-6">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-slate-100 mb-2.5">
+              Derecho Laboral & SECLO
+            </h3>
+            <p class="text-xs sm:text-sm text-diz-textMuted leading-relaxed mb-4">
+              Defensa integral de trabajadores en despidos injustificados, empleo no registrado ("en negro"), diferencias salariales y ART.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Liquidación indemnizatoria al día</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Audiencias SECLO y Ministerio</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-diz-gold text-[10px]"></i> Cobro a resultado (Pacto de Cuota Litis)</li>
+            </ul>
+          </div>
+          <a href="#precalificador" class="text-xs font-bold text-diz-gold flex items-center gap-1.5 hover:underline">
+            Consultar este tema <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF & GOOGLE REVIEWS SECTION -->
+  <section class="py-20 bg-diz-navy relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs uppercase tracking-widest font-bold text-diz-gold bg-diz-gold/10 px-3 py-1 rounded-full border border-diz-gold/20">
+            Casos Reales, Respuestas Claras
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-100 mt-4">
+            La Tranquilidad de Nuestros Clientes
+          </h2>
+        </div>
+        <div class="mt-4 md:mt-0 flex items-center gap-3">
+          <div class="flex text-amber-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="text-sm font-semibold text-slate-300">4.9 / 5.0 (Google Business & Instagram)</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-diz-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+          <p class="text-xs sm:text-sm text-slate-300 italic leading-relaxed">
+            "Estuve más de un año dando vueltas con promesas falsas del padre de mi hija que decía que no tenía ingresos porque cobraba en mano. El Dr. Diz y su equipo lograron trabar embargo sobre su cuenta bancaria y fijaron una cuota acorde con la canasta INDEC en tiempo récord."
+          </p>
+          <div class="mt-6 flex items-center gap-3 border-t border-slate-800/80 pt-4">
+            <div class="w-10 h-10 rounded-full bg-diz-gold/20 text-diz-gold flex items-center justify-center font-bold text-sm">
+              VR
+            </div>
+            <div>
+              <div class="text-sm font-bold text-slate-200">Valeria R.</div>
+              <div class="text-[11px] text-diz-textMuted">CABA • Cuota de Alimentos</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-diz-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+          <p class="text-xs sm:text-sm text-slate-300 italic leading-relaxed">
+            "Excelente atención humana. Mi divorcio venía con mucha rispidez por una casa y autos gananciales. Lo resolvieron todo con una mediación impecable en el Barolo. Súper recomendables por su seriedad y claridad desde el día 1."
+          </p>
+          <div class="mt-6 flex items-center gap-3 border-t border-slate-800/80 pt-4">
+            <div class="w-10 h-10 rounded-full bg-diz-gold/20 text-diz-gold flex items-center justify-center font-bold text-sm">
+              MG
+            </div>
+            <div>
+              <div class="text-sm font-bold text-slate-200">Martín G.</div>
+              <div class="text-[11px] text-diz-textMuted">Ramos Mejía • Divorcio y Bienes</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-diz-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+          <p class="text-xs sm:text-sm text-slate-300 italic leading-relaxed">
+            "Seguía los videos y consejos del estudio en Instagram (@estudiojuridicodiz) y me decidí a consultar. Hicimos la sucesión de mis padres en Capital sin moverme de mi casa. Siempre comunicados por WhatsApp y sin letras chicas con los honorarios."
+          </p>
+          <div class="mt-6 flex items-center gap-3 border-t border-slate-800/80 pt-4">
+            <div class="w-10 h-10 rounded-full bg-diz-gold/20 text-diz-gold flex items-center justify-center font-bold text-sm">
+              CL
+            </div>
+            <div>
+              <div class="text-sm font-bold text-slate-200">Carla L.</div>
+              <div class="text-[11px] text-diz-textMuted">Palermo • Sucesión Inmobiliaria</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="preguntas" class="py-20 bg-diz-slate/40 border-t border-diz-border/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs uppercase tracking-widest font-bold text-diz-gold bg-diz-gold/10 px-3 py-1 rounded-full border border-diz-gold/20">
+          Dudas Frecuentes
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-100 mt-4">
+          Respuestas Claras a tus Preguntas
+        </h2>
+        <p class="text-sm sm:text-base text-diz-textMuted mt-2">
+          La ley argentina explicada sin tecnicismos difíciles.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- Accordion Item 1 -->
+        <div class="border border-slate-800 rounded-xl bg-diz-card overflow-hidden">
+          <button onclick="toggleFaq(1)" class="w-full text-left p-5 flex justify-between items-center text-sm sm:text-base font-bold text-slate-100 hover:text-diz-gold transition">
+            <span>¿Qué ocurre si el obligado a pagar cuota dice no tener trabajo formal o cobra "en negro"?</span>
+            <i id="faqIcon1" class="fa-solid fa-chevron-down text-xs text-diz-gold transition-transform duration-300"></i>
+          </button>
+          <div id="faqContent1" class="hidden px-5 pb-5 text-xs sm:text-sm text-diz-textMuted leading-relaxed border-t border-slate-800/50 pt-3">
+            El no contar con un recibo de sueldo bajo relación de dependencia no exime de la obligación parental. En el Código Civil y Comercial de la Nación se aplican pruebas indiciarias de nivel de vida (gastos con tarjetas, autos a su nombre, viajes, alquileres y movimientos bancarios). Además, los jueces de familia hoy toman como piso vinculante la <strong>Canasta Crianza del INDEC</strong> y el Salario Mínimo Vital y Móvil.
+          </div>
+        </div>
+
+        <!-- Accordion Item 2 -->
+        <div class="border border-slate-800 rounded-xl bg-diz-card overflow-hidden">
+          <button onclick="toggleFaq(2)" class="w-full text-left p-5 flex justify-between items-center text-sm sm:text-base font-bold text-slate-100 hover:text-diz-gold transition">
+            <span>¿Cuánto demora iniciar una mediación prejudicial en CABA o Provincia de Buenos Aires?</span>
+            <i id="faqIcon2" class="fa-solid fa-chevron-down text-xs text-diz-gold transition-transform duration-300"></i>
+          </button>
+          <div id="faqContent2" class="hidden px-5 pb-5 text-xs sm:text-sm text-diz-textMuted leading-relaxed border-t border-slate-800/50 pt-3">
+            En nuestro estudio sorteamos la mediación prejudicial oficial en un plazo de <strong>24 a 48 horas hábiles</strong> tras recepcionar la documentación. La primera audiencia suele fijarse habitualmente dentro de los 15 a 25 días según agenda del mediador interviniente.
+          </div>
+        </div>
+
+        <!-- Accordion Item 3 -->
+        <div class="border border-slate-800 rounded-xl bg-diz-card overflow-hidden">
+          <button onclick="toggleFaq(3)" class="w-full text-left p-5 flex justify-between items-center text-sm sm:text-base font-bold text-slate-100 hover:text-diz-gold transition">
+            <span>¿Se pueden reclamar alimentos a los abuelos?</span>
+            <i id="faqIcon3" class="fa-solid fa-chevron-down text-xs text-diz-gold transition-transform duration-300"></i>
+          </button>
+          <div id="faqContent3" class="hidden px-5 pb-5 text-xs sm:text-sm text-diz-textMuted leading-relaxed border-t border-slate-800/50 pt-3">
+            Sí. El Art. 668 del CCCN faculta expresamente a reclamar a los ascendientes (abuelos/as) de manera subsidiaria o en el mismo proceso si se acredita fehacientemente la dificultad o imposibilidad de cobro al progenitor directo.
+          </div>
+        </div>
+
+        <!-- Accordion Item 4 -->
+        <div class="border border-slate-800 rounded-xl bg-diz-card overflow-hidden">
+          <button onclick="toggleFaq(4)" class="w-full text-left p-5 flex justify-between items-center text-sm sm:text-base font-bold text-slate-100 hover:text-diz-gold transition">
+            <span>¿Es obligatorio tener el consentimiento del otro para divorciarse?</span>
+            <i id="faqIcon4" class="fa-solid fa-chevron-down text-xs text-diz-gold transition-transform duration-300"></i>
+          </button>
+          <div id="faqContent4" class="hidden px-5 pb-5 text-xs sm:text-sm text-diz-textMuted leading-relaxed border-t border-slate-800/50 pt-3">
+            No. Desde la reforma del Código Civil, el divorcio es un derecho potestativo: basta la simple voluntad de uno de los cónyuges ("Divorcio Unilateral"). El juez decreta la sentencia de divorcio sin indagar culpas ni requerir la firma del otro.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OFFICES & MAP SECTION -->
+  <section id="sedes" class="py-20 bg-diz-navy border-t border-diz-border/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs uppercase tracking-widest font-bold text-diz-gold bg-diz-gold/10 px-3 py-1 rounded-full border border-diz-gold/20">
+            Nuestras Oficinas
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-100">
+            Sede Central en el Emblemático Palacio Barolo
+          </h2>
+          <p class="text-sm text-diz-textMuted leading-relaxed">
+            Atención presencial en el corazón histórico e institucional de la Ciudad de Buenos Aires, a metros de los Tribunales Nacionales. Contamos además con puntos de atención en Zona Oeste y Dolores.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-3.5 p-4 rounded-xl bg-diz-card border border-diz-gold/30">
+              <div class="text-diz-gold text-lg mt-0.5"><i class="fa-solid fa-landmark"></i></div>
+              <div>
+                <div class="text-sm font-bold text-slate-100">Palacio Barolo - Sede Central CABA</div>
+                <div class="text-xs text-slate-400">Av. de Mayo 1370, Monserrat, CABA (Con cita previa)</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 p-4 rounded-xl bg-diz-card border border-slate-800">
+              <div class="text-diz-gold text-lg mt-0.5"><i class="fa-solid fa-building"></i></div>
+              <div>
+                <div class="text-sm font-bold text-slate-100">Atención Pcia. de Buenos Aires</div>
+                <div class="text-xs text-slate-400">Sede Oeste (Ramos Mejía) & Dolores (Fuero Provincial)</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 p-4 rounded-xl bg-diz-card border border-slate-800">
+              <div class="text-emerald-400 text-lg mt-0.5"><i class="fa-solid fa-video"></i></div>
+              <div>
+                <div class="text-sm font-bold text-slate-100">Consultas Virtuales por Zoom / Meet</div>
+                <div class="text-xs text-slate-400">Para clientes del interior del país y residentes en el exterior</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Visual representation of Palacio Barolo Card / Map Mock -->
+        <div class="lg:col-span-7 bg-diz-card border border-diz-gold/40 rounded-2xl p-6 sm:p-8 relative overflow-hidden shadow-2xl">
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+            <div>
+              <div class="text-xs text-diz-gold font-bold tracking-wider uppercase">Ubicación Estratégica</div>
+              <div class="text-xl font-serif font-bold text-slate-100">Tribunales Civiles & Comerciales</div>
+            </div>
+            <a href="https://maps.google.com/?q=Av.+de+Mayo+1370+Palacio+Barolo+Buenos+Aires" target="_blank" class="text-xs bg-diz-navy border border-diz-gold/40 text-slate-200 px-3.5 py-2 rounded-lg hover:border-diz-gold transition flex items-center gap-1.5">
+              <i class="fa-solid fa-diamond-turn-right text-diz-gold"></i> Abrir en Google Maps
+            </a>
+          </div>
+
+          <!-- Stylized Mock Map / Barolo Architecture Card -->
+          <div class="relative w-full h-64 sm:h-80 rounded-xl bg-diz-navy border border-slate-700 overflow-hidden flex items-center justify-center">
+            
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#C5A059_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            
+            <!-- Graphic badge pin -->
+            <div class="relative z-10 text-center p-6 bg-diz-slate/90 backdrop-blur-md border border-diz-gold/60 rounded-xl shadow-2xl max-w-sm">
+              <div class="w-12 h-12 mx-auto rounded-full bg-diz-gold/20 text-diz-gold flex items-center justify-center text-xl mb-3 border border-diz-gold/50 animate-bounce">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <h4 class="font-serif font-bold text-slate-100 text-lg">Palacio Barolo • Av. de Mayo 1370</h4>
+              <p class="text-xs text-diz-textMuted mt-1">C1085ABQ • Ciudad Autónoma de Buenos Aires</p>
+              <div class="mt-4 inline-flex items-center gap-2 text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full">
+                <i class="fa-solid fa-train-subway"></i> Subte A (Sáenz Peña / Lima) • Subte C (Av. de Mayo)
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-xs text-diz-textMuted">
+            <span>Horarios de Atención: Lunes a Viernes de 9:00 a 18:30 hs.</span>
+            <span class="text-slate-400"><i class="fa-solid fa-shield-halved text-diz-gold mr-1"></i> Se requiere solicitar turno de ingreso con DNI</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="py-16 bg-gradient-to-r from-diz-slate via-diz-card to-diz-slate border-y border-diz-gold/30 relative">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-100">
+        No dejes pasar más tiempo sin asegurar el futuro legal de tu familia.
+      </h2>
+      <p class="mt-4 text-sm sm:text-base text-diz-textMuted max-w-2xl mx-auto">
+        Cada mes sin reclamo formal es un mes de derechos no retroactivos. Hablá ahora mismo con un profesional de Estudio Diz.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#precalificador" class="w-full sm:w-auto gold-gradient-bg text-diz-navy font-bold px-8 py-3.5 rounded-xl text-sm shadow-xl hover:brightness-110 transition">
+          Iniciar Precalificación Online
+        </a>
+        <a href="https://wa.me/5491168037380?text=Hola%20Estudio%20Diz%2C%20quisiera%20hacer%20una%20consulta%20legal%20prioritaria." target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-3.5 rounded-xl text-sm shadow-xl transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>WhatsApp Directo Despacho</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-diz-navy border-t border-slate-800 text-slate-400 text-xs py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <div class="md:col-span-1 space-y-3">
+          <div class="text-base font-serif font-bold text-slate-100 tracking-wider">
+            ESTUDIO DIZ <span class="text-diz-gold">& ASOC.</span>
+          </div>
+          <p class="text-xs text-diz-textMuted">
+            Despacho jurídico especializado en Derecho de Familia, Alimentos, Sucesiones e Indemnizaciones Laborales.
+          </p>
+          <div class="text-slate-300 font-semibold pt-1">
+            Matrículas: CPACF Tomo 130 / Folio 241 • ColProBA
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-slate-200 font-bold mb-3 uppercase tracking-wider text-[11px]">Accesos Rápidos</h4>
+          <ul class="space-y-2">
+            <li><a href="#calculador" class="hover:text-diz-gold transition">Calculador Cuota Alimentaria</a></li>
+            <li><a href="#precalificador" class="hover:text-diz-gold transition">Formulario Precalificador</a></li>
+            <li><a href="#areas" class="hover:text-diz-gold transition">Especialidades</a></li>
+            <li><a href="#preguntas" class="hover:text-diz-gold transition">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-slate-200 font-bold mb-3 uppercase tracking-wider text-[11px]">Sedes & Contacto</h4>
+          <ul class="space-y-2">
+            <li><i class="fa-solid fa-location-dot text-diz-gold mr-1"></i> Av. de Mayo 1370 (Palacio Barolo, CABA)</li>
+            <li><i class="fa-solid fa-location-dot text-diz-gold mr-1"></i> Zona Oeste: Ramos Mejía, PBA</li>
+            <li><i class="fa-solid fa-envelope text-diz-gold mr-1"></i> contacto@estudiodiz.com.ar</li>
+            <li><i class="fa-brands fa-instagram text-diz-gold mr-1"></i> @estudiojuridicodiz</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-slate-200 font-bold mb-3 uppercase tracking-wider text-[11px]">Aviso Legal</h4>
+          <p class="text-[11px] text-slate-500 leading-relaxed">
+            La información y el simulador de cuota alimentaria provistos en este sitio web tienen carácter exclusivamente informativo y referencial, sin constituir asesoramiento jurídico vinculante hasta la formalización de la consulta profesional con letrado matriculado.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="border-t border-slate-800/80 pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-3">
+        <div>
+          &copy; 2026 Estudio Jurídico Diz & Asociados. Todos los derechos reservados. Buenos Aires, Argentina.
+        </div>
+        <div class="flex items-center gap-4">
+          <span>Política de Privacidad</span>
+          <span>Términos de Servicio</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON WITH BADGE -->
+  <a href="https://wa.me/5491168037380?text=Hola%20Estudio%20Jur%C3%ADdico%20Diz%2C%20necesito%20hacerles%20una%20consulta%20legal%20urgente." target="_blank" aria-label="Contactar por WhatsApp" class="fixed bottom-6 right-6 z-50 group flex items-center">
+    <!-- Tooltip label -->
+    <span class="hidden md:inline-block mr-3 bg-diz-navy/95 border border-diz-gold/40 text-slate-100 text-xs px-3.5 py-1.5 rounded-full shadow-xl font-medium tracking-wide backdrop-blur group-hover:border-diz-gold transition">
+      ¿Hablamos por WhatsApp?
+    </span>
+    <!-- WhatsApp Icon Circle -->
+    <div class="w-14 h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center text-2xl shadow-2xl hover:scale-105 active:scale-95 transition-all relative">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="absolute -top-1 -right-1 w-4 h-4 bg-amber-400 border-2 border-diz-navy rounded-full"></span>
+    </div>
+  </a>
+
+  <!-- NOTIFICATION TOAST BOX (FOR REPLACING ALERTS) -->
+  <div id="toastNotification" class="fixed top-5 right-5 z-50 hidden bg-diz-slate border border-diz-gold text-slate-100 px-5 py-4 rounded-xl shadow-2xl max-w-sm transition-all transform duration-300">
+    <div class="flex items-center gap-3">
+      <i id="toastIcon" class="fa-solid fa-circle-check text-emerald-400 text-xl"></i>
+      <div>
+        <h4 id="toastTitle" class="font-bold text-sm">Notificación</h4>
+        <p id="toastMessage" class="text-xs text-diz-textMuted mt-0.5">Mensaje del sistema</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC (CALCULATOR, MULTI-STEP LEAD QUALIFIER & UI) -->
+  <script>
+    // State for child support calculator
+    let cantHijos = 1;
+    let ingresoDesconocidoMode = false;
+
+    // Initialize on load
+    window.onload = function() {
+      calcularCuota();
+    };
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', toggleMenu);
+
+    function toggleMenu() {
+      mobileMenu.classList.toggle('hidden');
+    }
+
+    // Calculator button selector
+    function setHijos(num) {
+      cantHijos = num;
+      document.querySelectorAll('.hijo-btn').forEach(btn => {
+        if (parseInt(btn.getAttribute('data-val')) === num) {
+          btn.className = 'hijo-btn active-calc-btn py-2.5 rounded-lg border text-sm font-bold transition flex items-center justify-center gap-1 border-diz-gold bg-diz-gold text-diz-navy';
+        } else {
+          btn.className = 'hijo-btn py-2.5 rounded-lg border text-sm font-bold transition flex items-center justify-center gap-1 border-slate-700 bg-diz-navy text-slate-300 hover:border-diz-gold/60';
+        }
+      });
+      calcularCuota();
+    }
+
+    // Toggle unknown income
+    function toggleIngresoDesconocido() {
+      ingresoDesconocidoMode = !ingresoDesconocidoMode;
+      const ingresoInput = document.getElementById('ingresoNeto');
+      const ingresoHelp = document.getElementById('ingresoHelp');
+
+      if (ingresoDesconocidoMode) {
+        ingresoInput.value = 1450000;
+        ingresoHelp.innerHTML = "<span class='text-amber-300 font-semibold'>Modo Estimativo:</span> Se calcula en base a la <strong>Canasta Crianza INDEC</strong> para actividad en blanco o presunción de ingresos medios.";
+        showToast("Modo Presuntivo Activo", "Calculando sobre Canasta Crianza y pautas jurisprudenciales.");
+      } else {
+        ingresoInput.value = 1200000;
+        ingresoHelp.innerText = "Ingreso neto mensual promedio en mano (o estimación de estilo de vida).";
+      }
+      calcularCuota();
+    }
+
+    // Child support calculation engine
+    function calcularCuota() {
+      const ingresoVal = parseFloat(document.getElementById('ingresoNeto').value) || 0;
+      const rangoEdad = parseInt(document.getElementById('rangoEdad').value) || 1;
+      const tieneAlquiler = document.getElementById('checkAlquiler').checked;
+      const tieneColegio = document.getElementById('checkColegio').checked;
+      const tieneSalud = document.getElementById('checkSalud').checked;
+
+      // Base percentage according to number of children in Argentine family jurisprudence
+      let minPct = 20;
+      let maxPct = 25;
+
+      if (cantHijos === 1) {
+        minPct = 20;
+        maxPct = 25;
+      } else if (cantHijos === 2) {
+        minPct = 28;
+        maxPct = 35;
+      } else if (cantHijos === 3) {
+        minPct = 35;
+        maxPct = 42;
+      } else {
+        minPct = 40;
+        maxPct = 48;
+      }
+
+      // Adjustment by age bracket (Canasta Crianza INDEC)
+      if (rangoEdad === 1) { // 1 to 3 years (high cost of maternal care)
+        minPct += 2;
+        maxPct += 2;
+      } else if (rangoEdad === 4) { // Teenagers 13 to 21 (high educational/transport costs)
+        minPct += 2;
+        maxPct += 3;
+      }
+
+      // Additions for housing and special items
+      if (tieneAlquiler) {
+        minPct += 3;
+        maxPct += 4;
+      }
+      if (tieneColegio) {
+        minPct += 2;
+        maxPct += 3;
+      }
+      if (tieneSalud) {
+        minPct += 2;
+        maxPct += 3;
+      }
+
+      // Max legal ceiling cap (typically 50% max of net salary to preserve debtor subsistence)
+      if (minPct > 45) minPct = 45;
+      if (maxPct > 50) maxPct = 50;
+
+      // Calculate amounts
+      const montoMin = Math.round(ingresoVal * (minPct / 100));
+      const montoMax = Math.round(ingresoVal * (maxPct / 100));
+
+      // Format currency
+      const formatMin = new Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', maximumFractionDigits: 0 }).format(montoMin);
+      const formatMax = new Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', maximumFractionDigits: 0 }).format(montoMax);
+
+      document.getElementById('resPorcentaje').innerText = `${minPct}% - ${maxPct}%`;
+      document.getElementById('resMonto').innerText = `${formatMin} - ${formatMax}`;
+    }
+
+    // Send calculation to WhatsApp with tailored message
+    function enviarCalculoWhatsApp() {
+      const ingresoVal = document.getElementById('ingresoNeto').value;
+      const porcentaje = document.getElementById('resPorcentaje').innerText;
+      const monto = document.getElementById('resMonto').innerText;
+      const alquiler = document.getElementById('checkAlquiler').checked ? 'Sí' : 'No';
+      const colegio = document.getElementById('checkColegio').checked ? 'Sí' : 'No';
+
+      const mensaje = `Hola Estudio Jurídico Diz (@estudiojuridicodiz), realicé el cálculo en la web para ${cantHijos} hijo(s).%0A%0A*Resultados Estimados:*%0A- Rango Legal: ${porcentaje}%0A- Monto proyectado: ${monto}%0A- Ingreso base tomado: $${ingresoVal}%0A- ¿Paga alquiler?: ${alquiler}%0A- ¿Colegio/Prepaga?: ${colegio}%0A%0ADeseo solicitar una liquidación formal y saber cómo iniciar el reclamo express.`;
+
+      window.open(`https://wa.me/5491168037380?text=${mensaje}`, '_blank');
+    }
+
+    // Multi-Step Lead Qualifier Wizard Navigation
+    let currentStep = 1;
+
+    function goToStep(step) {
+      // Hide all steps
+      document.getElementById('step1').classList.add('hidden');
+      document.getElementById('step2').classList.add('hidden');
+      document.getElementById('step3').classList.add('hidden');
+
+      // Show current step
+      document.getElementById(`step${step}`).classList.remove('hidden');
+
+      // Update bubbles & lines
+      const b1 = document.getElementById('stepBubble1');
+      const b2 = document.getElementById('stepBubble2');
+      const b3 = document.getElementById('stepBubble3');
+      const l1 = document.getElementById('stepLine1');
+      const l2 = document.getElementById('stepLine2');
+
+      const activeClass = "w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-diz-gold text-diz-navy transition-all duration-300";
+      const inactiveClass = "w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-diz-navy border border-slate-700 text-slate-400 transition-all duration-300";
+
+      if (step === 1) {
+        b1.className = activeClass;
+        b2.className = inactiveClass;
+        b3.className = inactiveClass;
+        l1.className = "flex-1 h-0.5 bg-slate-700 mx-2 transition-all duration-300";
+        l2.className = "flex-1 h-0.5 bg-slate-700 mx-2 transition-all duration-300";
+      } else if (step === 2) {
+        b1.className = activeClass;
+        b2.className = activeClass;
+        b3.className = inactiveClass;
+        l1.className = "flex-1 h-0.5 bg-diz-gold mx-2 transition-all duration-300";
+        l2.className = "flex-1 h-0.5 bg-slate-700 mx-2 transition-all duration-300";
+      } else if (step === 3) {
+        b1.className = activeClass;
+        b2.className = activeClass;
+        b3.className = activeClass;
+        l1.className = "flex-1 h-0.5 bg-diz-gold mx-2 transition-all duration-300";
+        l2.className = "flex-1 h-0.5 bg-diz-gold mx-2 transition-all duration-300";
+      }
+
+      currentStep = step;
+    }
+
+    // Submit Lead Qualifier
+    function finalizarPrecalificacion() {
+      const nombre = document.getElementById('leadNombre').value.trim();
+      const telefono = document.getElementById('leadTelefono').value.trim();
+      const zona = document.getElementById('leadZona').value;
+      const detalle = document.getElementById('leadDetalle').value.trim();
+
+      if (!nombre || !telefono) {
+        showToast("Campos requeridos", "Por favor ingresá tu nombre y teléfono para que podamos contactarte.", true);
+        return;
+      }
+
+      const area = document.querySelector('input[name="areaLegal"]:checked').value;
+      const estado = document.querySelector('input[name="estadoCaso"]:checked').value;
+
+      showToast("¡Caso Registrado con Éxito!", "Conectando con un letrado de guardia...");
+
+      // Prepare WhatsApp URL
+      const textMsg = `*PRECALIFICACIÓN DE CASO - ESTUDIO DIZ*%0A` +
+        `----------------------------------------%0A` +
+        `👤 *Cliente:* ${nombre}%0A` +
+        `📱 *WhatsApp:* ${telefono}%0A` +
+        `📍 *Jurisdicción:* ${zona}%0A` +
+        `⚖️ *Materia:* ${area}%0A` +
+        `📌 *Estado Procesal:* ${estado}%0A` +
+        (detalle ? `📝 *Detalle:* ${detalle}%0A` : '') +
+        `----------------------------------------%0A` +
+        `Solicito un turno o asesoramiento de prioridad.`;
+
+      setTimeout(() => {
+        window.open(`https://wa.me/5491168037380?text=${textMsg}`, '_blank');
+      }, 700);
+    }
+
+    // FAQ Accordion Toggle
+    function toggleFaq(id) {
+      const content = document.getElementById(`faqContent${id}`);
+      const icon = document.getElementById(`faqIcon${id}`);
+
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    // Custom Toast Notification System
+    function showToast(title, msg, isError = false) {
+      const toast = document.getElementById('toastNotification');
+      const toastTitle = document.getElementById('toastTitle');
+      const toastMessage = document.getElementById('toastMessage');
+      const toastIcon = document.getElementById('toastIcon');
+
+      toastTitle.innerText = title;
+      toastMessage.innerText = msg;
+
+      if (isError) {
+        toastIcon.className = "fa-solid fa-triangle-exclamation text-amber-400 text-xl";
+      } else {
+        toastIcon.className = "fa-solid fa-circle-check text-emerald-400 text-xl";
+      }
+
+      toast.classList.remove('hidden');
+
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 4000);
+    }
+  </script>
+
+</body>
+</html>
